@@ -1,0 +1,1 @@
+{"users": [{"username": "a", "password": "a", "goal": 122, "records": [{"record": 12, "time": "2023-11-25"}]}]}
