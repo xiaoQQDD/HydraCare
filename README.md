@@ -1,4 +1,9 @@
-# HydraCare
+
+<div>
+<h1>
+<img src="./sources/imgs/drop.png" width="50px"  /> HydraCare
+</h1>
+</div>
 This app enables users to effortlessly monitor their daily water intake, establish personalized water reminders, access transparent statistics on water consumption, and receive valuable suggestions for nutritious beverage options.
 
 The Water Plan Project originates from the recognition that the accelerated pace of modern life often leads white-collar professionals to overlook or postpone essential hydration. Persistent dehydration can adversely impact physical well-being and diminish regular bodily functions. In response, this app serves a crucial role as a water reminder, tracking users' daily water intake, issuing timely reminders, and contributing to the cultivation of periodic water-drinking habits. Additionally, the app enhances user choices by recommending diverse and healthful beverages, including various fruit teas and homemade drinks.
