@@ -6,4 +6,5 @@ The Water Plan Project originates from the recognition that the accelerated pace
 
 User-centric development lies at the core of this application. Through comprehensive market research and user interviews, the app has been tailored to meet specific user needs: the independent setting of daily water intake goals and reminder times, a clear and intuitive presentation of water data, timely reminders to facilitate on-time water consumption, and the provision of suggestions for healthy beverage alternatives. Users can anticipate an easy-to-use app with effective reminder features, aiding them in the establishment of positive and lasting drinking habits.
 
+
 Web: http://qinglangee.pythonanywhere.com/static/hydra_care/index.html
