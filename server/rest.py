@@ -46,3 +46,29 @@ def record():
 def statistics():
     if request.method == 'GET':
         return render_template('statistics.html')
+
+def getData(num):
+    today = datetime.now()
+    three_days_ago = today - timedelta(days=num)
+
+    date_str = three_days_ago.strftime("%Y-%m-%d")
+    date_key = three_days_ago.strftime("%m.%d")
+
+    user = db.find_by_name(session['username'])
+
+    data = 0
+
+    if 'records' in user:
+        for record in user['records']:
+            if record['time'] == date_str:
+                data = data + record['record']
+
+    return {"date": date_key, "data": data}
+
+@bp.get("/statistics/data")
+def statistics_data():
+    res = []
+    if 'username' in session:
+        for i in range(7):
+            res.append(getData(i))
+    return json.dumps({"code": 0, "data": res})
