@@ -163,3 +163,5 @@ ignore/
 .vscode/
 write.py
 output.md
+
+myvenv/
