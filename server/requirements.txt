@@ -1,7 +1,0 @@
-Flask==2.2.2
-Flask-SQLAlchemy==3.0.3
-WTForms==3.0.1
-pytest==7.3.0
-coverage==7.2.3
-pylint==2.17.2
-werkzeug===2.2.2
