@@ -8,3 +8,5 @@ User-centric development lies at the core of this application. Through comprehen
 
 
 Web: http://qinglangee.pythonanywhere.com/static/hydra_care/index.html
+
+UI : https://lyjq1r.axshare.com/#id=fm9cig&p=%E7%99%BB%E5%BD%95
