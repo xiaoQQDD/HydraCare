@@ -1,0 +1,55 @@
+a.Water Settings
+ Display page:
+Input field: daily water goal amount
+Time picker: reminder time 1
+Time picker: reminder time 2
+Time picker: reminder time 3
+Radio buttons: reminder type (notification, alarm)
+Save button
+ Save input
+goalAmount = get input field value
+reminderTimesArray = get time picker values
+reminderType = get radio button value
+saveToDB(goalAmount,
+reminderTimesArray,
+reminderType)
+ Trigger reminder
+read reminder details from DB
+if reminder type is notification:
+  showNotificationPopup()
+if reminder type is alarm:
+  playAlarmSound()
+b. Water Reminder
+When reminder triggers:
+showReminderPopup()
+text show "Drink water"
+button: Drink Now
+button: Snooze
+If Drink Now clicked:
+  closePopup()
+If Snooze clicked:
+  rescheduleReminder(later time)
+c . Water Logging
+Display page:
+Input field: amount drank
+Save amount:
+amount = get input field value
+saveToDB(amount)
+update daily total
+d . Water Statistics
+read daily total from DB
+calculate week total, month total
+generate chart data points
+Display page:
+show chart with day/week/month data
+time range selector
+e . Healthy Drink Recommendations
+healthyDrinksList array
+userDrinkRatings dictionary
+Display page:
+show healthy drinks list
+filter by user ratings
+user rating input field
+Save rating:
+get user rating
+save to ratings dictionary
