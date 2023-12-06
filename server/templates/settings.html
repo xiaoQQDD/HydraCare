@@ -11,9 +11,6 @@
     <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{url_for('static', filename='js/feather-4.28.0.min.js')}}"></script>
     <script src="{{url_for('static', filename='js/jquery-3.5.1.js')}}"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/feather-4.28.0.min.js"></script>
-    <script src="js/jquery-3.5.1.js"></script>
 </head>
 
 <body>
@@ -29,12 +26,36 @@
 
         <form action="/settings" method="post">
             
-            <div class="row">
+            <div class="row mb-2">
                 <div class="col-4">
                     Daily water intake goal
                 </div>
                 <div class="col-6">
-                    <input type="number" class="form-control" id="goal" name="goal" placeholder="1000">
+                    <input type="number" class="form-control" id="goal" name="goal" placeholder="1000" required>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-4">
+                    Remind hour start(0-23):
+                </div>
+                <div class="col-6">
+                    <input type="number" class="form-control" id="start" name="start" placeholder="11" required>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-4">
+                    Remind hour end(0-23):
+                </div>
+                <div class="col-6">
+                    <input type="number" class="form-control" id="end" name="end" placeholder="19" required>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-4">
+                    Remind gap time(minues):
+                </div>
+                <div class="col-6">
+                    <input type="number" class="form-control" id="gap" name="gap" placeholder="30" required>
                 </div>
             </div>
             <div class="row">
@@ -63,5 +84,7 @@
         </div>
     </div>
 </body>
+<script src="{{url_for('static', filename='js/setting.js')}}"></script>
+<script src="{{url_for('static', filename='js/remind.js')}}"></script>
 
 </html>

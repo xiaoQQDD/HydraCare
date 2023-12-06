@@ -11,9 +11,6 @@
     <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{url_for('static', filename='js/feather-4.28.0.min.js')}}"></script>
     <script src="{{url_for('static', filename='js/jquery-3.5.1.js')}}"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/feather-4.28.0.min.js"></script>
-    <script src="js/jquery-3.5.1.js"></script>
 </head>
 
 <body>
@@ -59,7 +56,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <img src="imgs/fun1.png" alt="" class="img-fluid">
+                <img src="{{url_for('static', filename='imgs/fun1.png')}}" alt="" class="img-fluid">
             </div>
         </div>
         <h3>Water Record</h3>
@@ -72,7 +69,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <img src="imgs/fun2.png" alt="" class="img-fluid">
+                <img src="{{url_for('static', filename='imgs/fun22.png')}}" alt="" class="img-fluid">
             </div>
         </div>
         <h3>Water Statistics</h3>
@@ -85,7 +82,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <img src="imgs/fun3.png" alt="" class="img-fluid">
+                <img src="{{url_for('static', filename='imgs/fun3.png')}}" alt="" class="img-fluid">
             </div>
         </div>
 
@@ -108,5 +105,5 @@
         </div>
     </div>
 </body>
-
+<script src="{{url_for('static', filename='js/remind.js')}}"></script>
 </html>

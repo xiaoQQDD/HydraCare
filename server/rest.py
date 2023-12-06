@@ -26,7 +26,10 @@ def settings():
         return render_template('settings.html')
     user = db.find_by_name(session['username'])
     goal = int(request.form['goal'])
-    user['goal'] = goal
+    start = int(request.form['start'])
+    end = int(request.form['end'])
+    gap = int(request.form['gap'])
+    user['setting'] = {'goal':goal, 'start':start, 'end':end, 'gap':gap}
     db.update_user(user)
     return render_template('settings.html', success_msg="Goal updated.")
 
@@ -72,3 +75,14 @@ def statistics_data():
         for i in range(7):
             res.append(getData(i))
     return json.dumps({"code": 0, "data": res})
+
+
+
+@bp.get("/getsetting")
+@auth.login_required
+def getsettings():
+    user = db.find_by_name(session['username'])
+    if'setting' not in user:
+        return {'goal':1000,'start':10, 'end':19, 'gap':30}
+    else:
+        return user['setting']
